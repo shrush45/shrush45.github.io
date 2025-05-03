@@ -20,16 +20,16 @@
             <div class="left">
                 Shrushti Salunke
             </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#first">About Me</a></li>
-                    <li><a href="#second">Work Experience</a></li>
-                    <li><a href="#third">Skills</a></li>
-                    <!-- <li><a href="#">Publications</a></li> -->
-                    <li><a href="#fourth">Contact at</a></li>
-                </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Unicode for hamburger icon -->
             </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#first">About Me</a></li>
+                <li><a href="#second">Work Experience</a></li>
+                <li><a href="#third">Skills</a></li>
+                <li><a href="#fourth">Contact at</a></li>
+            </ul>
 
         </nav>
     </header>
@@ -207,6 +207,11 @@
                 move: { enable: true, speed: 1 }
             }
         });
+
+        function toggleMenu() {
+            const menu = document.querySelector(".nav-links");
+            menu.classList.toggle("show");
+        }
     </script>
 
 </body>
