@@ -16,20 +16,23 @@
 
 <body id="home">
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="left">
                 Shrushti Salunke
             </div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#first">About Me</a></li>
-                    <li><a href="#second">Work Experience</a></li>
-                    <li><a href="#third">Skills</a></li>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#first">About Me</a></li>
+                <li><a href="#second">Work Experience</a></li>
+                <li><a href="#third">Skills</a></li>
                     <!-- <li><a href="#">Publications</a></li> -->
-                    <li><a href="#fourth">Contact at</a></li>
-                </ul>
+                <li><a href="#fourth">Contact at</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-
         </nav>
     </header>
     <main>
@@ -207,15 +210,17 @@
 
 
         });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
 
-        const toggle = document.querySelector('.nav-toggle');
-        const menu = document.querySelector('.nav-menu');
-
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
         });
     </script>
-
 </body>
 
 </html>
