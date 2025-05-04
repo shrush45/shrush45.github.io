@@ -485,7 +485,7 @@ footer {
 
     .leftsection {
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
     }
 
     .leftsection div {
@@ -555,7 +555,6 @@ footer {
     }
 
     .nav-menu ul li a {
-        font-size: 0.8rem;
         display: block;
         width: 100%;
     }
