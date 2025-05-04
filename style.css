@@ -81,9 +81,7 @@ nav ul li a:hover {
     margin-top: 20px;
 
 }
-.first, .second, .third, .fourth{
-        scroll-margin-top: 140px;
-}
+
 .leftsection {
     font-size: 4rem;
 }
@@ -561,4 +559,7 @@ footer {
         display: block;
         width: 100%;
     }
+    .first, .second, .third, .fourth{
+        scroll-margin-top: 140px;
+}
 }
