@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: linear-gradient(to right,#88c5e38f, white);
+     */
+    background: linear-gradient(135deg, #041C32, #0D47A1, #1976D2);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: sticky;
+    /* overflow: hidden; */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px;
+    background-color: #CDDC39;
+
+    /* background-color: #06385c; */
+}
+
+.nav-links {
+    display: flex;
+    /* justify-content: space-around; */
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 23px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #262323;
+    font-size: 1.02rem;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    text-decoration: none;
+    color: black;
+    font-size: 1.04rem;
+    font-weight: bold;
+
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color:black;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+
+
+.left {
+    font-size: 1.5rem;
+    color: #262323;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 150px;
+    height: 320px;
+    z-index: 1;
+}
+
+.firstsection>div {
+    width: 70%;
+    margin-top: 20px;
+
+}
+
+.leftsection {
+    font-size: 4rem;
+}
+
+.leftsection div {
+    color: whitesmoke;
+    font-size: 3.0rem;
+    align-items: center;
+}
+
+/* .rightsection img {
+    width: 300px;
+    margin: 20px 0;
+} */
+
+.leftsection .btn button {
+    color: black;
+    padding: 10px;
+    border: 2px solid #26A69A;
+    background-color: #26A69A;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.leftsection .btn button:hover {
+    background-color: darkgray;
+    font-size: small;
+    border: 2px solid darkgray;
+}
+
+.leftsection .btn a {
+    text-decoration: none;
+    color: black;
+}
+
+#element {
+    color: #1f70aa;
+    text-decoration-style: wavy;
+}
+
+
+.first {
+    display: flex;
+    margin: auto 0px;
+    height: 100vh;
+    scroll-margin-top: 70px;
+}
+
+.first-left {
+    flex: 40%;
+    text-align: center;
+    padding-top: 50px;
+
+    background-color: #007C91;
+    top: 70px;
+
+}
+
+.first-left img {
+    padding: 40px;
+}
+
+.first-right {
+    flex: 60%;
+    background-color: #19496abf;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.first-right p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.second {
+    display: flex;
+    height: 100vh;
+    margin-top: 20px;
+    scroll-margin-top: 70px;
+}
+
+.second-left {
+    flex: 40%;
+    background-color: #007C91;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.second-left img {
+    padding: 40px;
+    background: transparent;
+}
+
+.second-right {
+    flex: 60%;
+    background-color: #19496abf;
+    padding: 50px;
+}
+
+.second-right ul {
+    padding: 50px;
+    line-height: 35px;
+}
+
+
+.third {
+    display: flex;
+    height: 100vh;
+    margin-top: 20px;
+    scroll-margin-top: 70px;
+
+}
+
+.third-left {
+    flex: 40%;
+    background-color: #007C91;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.third-left img {
+    padding: 40px;
+}
+
+.third-right {
+    flex: 60%;
+    background-color: #19496abf;
+    padding: 50px;
+}
+
+.third-skill {
+    display: flex;
+    padding: 7px;
+
+}
+
+.third-skill div {
+    background-color: #1f70aa;
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+    border-radius: 5%;
+    margin: 10px;
+
+}
+
+.third-skill div:hover {
+    border: 1px solid darkgray;
+
+}
+
+.tools {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.tools div {
+    background-color: #1f70aa;
+    margin: 3px;
+    padding: 10px;
+    height: 150px;
+    width: 210px;
+    border-radius: 5%;
+}
+
+.fourth {
+    display: flex;
+    margin: auto 0px;
+    height: 100vh;
+    margin-top: 20px;
+    scroll-margin-top: 70px;
+}
+
+.fourth-left {
+    flex: 40%;
+    background-color: #007C91;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.fourth-left img {
+    padding: 40px;
+}
+
+.fourth-right {
+    flex: 60%;
+    background-color: #19496abf;
+    font-size: 1.2rem;
+    padding: 50px;
+}
+
+
+footer {
+    background-color: #262323;
+    height: 100px;
+    font-size: small;
+}
+
+.footer {
+    display: flex;
+
+    padding: 20px 20px;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/* Animations css */
+
+.logo {
+    font-size: 2rem;
+    padding: 0 0.2em;
+    display: block;
+
+}
+
+.firstName {
+    color: white;
+}
+
+/* Set vendor-specific animation name and duration on .logo class */
+
+.logo {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 5s;
+    -moz-animation-name: fadein;
+    -moz-animation-duration: 5s;
+    -ms-animation-name: fadein;
+    -ms-animation-duration: 5s;
+    -o-animation-name: fadein;
+    -o-animation-duration: 5s;
+    animation-name: fadein;
+    animation-duration: 5s;
+}
+
+/* Set vendor-specific keyframes for animation on load 
+     Position and opacity are animated */
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        margin-left: -250px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        margin-left: -250px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        margin-left: -250px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+
+#particles-js {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 0;
+    /* behind your content */
+    pointer-events: none;
+}
+
+@media screen and (max-width: 400px) {
+
+    .first-left img,
+    .second-left img,
+    .third-left img {
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .fourth {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .first,
+    .second,
+    .third {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .first-left,
+    .second-left,
+    .third-left,
+    .first-right,
+    .second-right,
+    .third-right {
+        flex: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .first-left img,
+    .second-left img,
+    .third-left img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .third-skill{
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tools {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third-skill div {
+            width: 25%;
+            margin: 10px 3px;
+    }
+
+    .tools div {
+        width: 60%;
+        margin: 10px 0;
+    }
+
+    .third-right,
+    .second-right,
+    .first-right {
+        overflow: visible;
+    }
+
+    .fourth-left,
+    .fourth-right {
+        flex: 100%;
+        padding: 20px;
+    }
+
+    .fourth-left img {
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    footer {
+        position: relative;
+        z-index: 1;
+    }
+
+    .fourth-right {
+        padding-bottom: 60px;
+        /* Give space above footer */
+    }
+
+    .first-right,
+    .second-right,
+    .third-right,
+    .fourth-right {
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .first-right p,
+    .second-right p,
+    .third-right p,
+    .fourth-right p {
+        padding: 20px 10px;
+        line-height: 1.6;
+    }
+
+    .first, .second, .third, .fourth{
+        scroll-margin-top: 80px;
+    }
+
+    .leftsection {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .leftsection div {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        /* word-break: break-word; */
+    }
+
+    .logo.firstName {
+        font-size: 1rem;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .leftsection .btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .leftsection .btn button {
+        width: 150px;
+        /* margin:  auto; */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        /* flex-direction: column; */
+        width: 100%;
+        position: absolute;
+        /* height: auto;
+        padding: 10px 10px;
+        gap: 10px; */
+        top:70px;
+        background-color: #CDDC39;
+        left:0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+        /* padding: 3px 0; */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
