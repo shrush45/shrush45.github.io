@@ -9,9 +9,12 @@
         href="https://fonts.googleapis.com/css2?family=Boldonse&family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bioinformatics Scientist specializing in genomics, machine learning, and wellness genomics. Skilled in Python, NGS analysis, and AI-driven genomics.">
+    <meta name="keywords" content="Bioinformatics, Genomics, NGS, Machine Learning, Python, AI in Genomics">
+    <meta name="author" content="Shrushti Salunke">
     <title>Shrushti Salunke - Bioinformatician</title>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 </head>
 
 <body id="home">
@@ -25,7 +28,7 @@
                 <li><a href="#first">About Me</a></li>
                 <li><a href="#second">Work Experience</a></li>
                 <li><a href="#third">Skills</a></li>
-                    <!-- <li><a href="#">Publications</a></li> -->
+                <!-- <li><a href="#">Publications</a></li> -->
                 <li><a href="#fourth">Contact at</a></li>
             </ul>
             <div class="menu-toggle">
@@ -43,15 +46,16 @@
 
                     <span class="logo firstName">Bioinformatics Scientist</span><br>
                     <!-- <span id="element"></span><br> -->
+                    <div style="font-size: 1.5rem;">Translating genomic variants into actionable wellness and healthcare
+                        insights using ML & bioinformatics.</div><br>
                 </div>
 
+
                 <div class="btn">
-                    <button><a href="resume.pdf"
-                            target="_blank">RESUME</a></button>
+                    <button><a href="resume.pdf" target="_blank" download onclick="console.log('Resume downloaded')">RESUME</a></button>
                     <button><a href="#fourth">CONTACT AT</a></button>
                 </div>
             </div>
-            <div id="particles-js"></div>
         </section>
 
         <section class="secondsection">
@@ -105,8 +109,7 @@
                         <li>Handling pdf, csv, json files for data extraction and further processing.</li>
                         <li>Statistical Analysis (Pearson/Spearman correlation, Hypothesis testing, ANOVA)</li>
                     </ul>
-                    Check out more at my <a href="resume.pdf"
-                        target="_blank">CV</a>
+                    Check out more at my <a href="resume.pdf" target="_blank">CV</a>
                 </div>
             </div>
             <div class="third" id="third">
@@ -169,13 +172,10 @@
                     <h4>Bioinformatics Scientist</h4><br><br></p>
                     <div>
                         <a href="https://www.linkedin.com/in/shrushti-salunke-891791197/" target="_blank"><img
-                                src="linkedin-png.png" height="60px"
+                                src="linkedin-png.png" height="60px" width="60px"></a>
+                        <a href="shrushtisalunke910@gmail.com" target="_blank"><img src="gmail-png.png" height="60px"
                                 width="60px"></a>
-                        <a href="shrushtisalunke910@gmail.com" target="_blank"><img
-                                src="gmail-png.png" height="60px"
-                                width="60px"></a>
-                        <a href="https://github.com/shrush45" target="_blank"><img
-                                src="github-png.png" height="60px"
+                        <a href="https://github.com/shrush45" target="_blank"><img src="github-png.png" height="60px"
                                 width="60px"></a>
                     </div>
 
@@ -185,32 +185,13 @@
 
     </main>
     </div>
-    <footer>
-        <div class="footer">
-            Developed by @Shrushti
-        </div>
-
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-    <script>
-        tsParticles.load("particles-js", {
-            fullScreen: { enable: false }, // Keeps it scoped to the div
-            particles: {
-                number: { value: 70 },
-                shape: { type: "circle" },
-                color: { value: "#00bcd4" },
-                line_linked: {
-                    enable: true,
-                    color: "#00bcd4",
-                    opacity: 0.5
-                },
-                size: { value: 4 },
-                move: { enable: true, speed: 1 }
-            }
-
-
-        });
-    </script>
+    <footer class="main-footer">
+    <div class="footer-container">
+        <p class="footer-name">Shrushti Salunke</p>
+        <p class="footer-role">Bioinformatics Scientist • Genomics • ML</p>
+        <p class="footer-copy">© 2026 All Rights Reserved.</p>
+    </div>
+</footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.querySelector('.menu-toggle');
